@@ -2,7 +2,6 @@
 #X declare -path else -lib else;
 #X declare -path cyclone -lib cyclone;
 #X declare -path ./sub-patches;
-#X declare -path ./samples;
 #X obj 607 665 output~;
 #X obj 512 9 fft-window;
 #X obj 512 -31 unpack f;
@@ -130,8 +129,6 @@
 #X text 49 704 Unprocessed (like bypass but in sync with the processed signal i.e. delayed by the block size);
 #X obj 87 179 spec-son-fft;
 #X obj -216 -115 declare -path ./sub-patches;
-#X obj -217 -31 declare -path ./samples;
-#X text -50 -32 For audio files used by the input mixer;
 #X connect 1 0 20 4;
 #X connect 2 0 1 0;
 #X connect 3 0 4 0;

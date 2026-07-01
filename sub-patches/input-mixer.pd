@@ -1,4 +1,5 @@
 #N canvas 194 37 1659 940 12;
+#X declare -path ./samples;
 #X obj 357 674 else/mix4~;
 #X obj 564 684 gain~ 1 0 20 0 1;
 #A saved;
@@ -78,6 +79,8 @@
 #X msg 949 507 speed \$1;
 #X obj 949 421 knob 50 0.001 1000 1 100 empty empty #dfdfdf #7c7c7c #000000 1 0 0 0 1 320 0 0 0.001 empty empty 0 12 6 -15 0 1 0 0;
 #X floatatom 949 479 5 0 0 0 - - - 0;
+#X obj 17 43 declare -path ./samples;
+#X text 184 42 For audio files used by the input mixer;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 32 0;
