@@ -70,7 +70,7 @@
 #X obj 42 366 s block-size-gui-s;
 #X obj 28 396 s overlap-ratio-gui-s;
 #X obj 19 427 s sampling-ratio-gui-s;
-#X obj 664 245 r win-gui-r;
+#X obj 664 242 r win-gui-r;
 #X obj 664 272 s win-gui-s;
 #X obj 664 301 r norm-gui-r;
 #X obj 664 334 s norm-gui-s;
