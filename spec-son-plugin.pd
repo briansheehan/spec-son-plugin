@@ -121,8 +121,9 @@
 #X text 49 704 Unprocessed (like bypass but in sync with the processed signal i.e. delayed by the block size);
 #X obj 87 179 spec-son-fft;
 #X obj -216 -115 declare -path ./sub-patches;
-#X obj -678 467 fft-gain-gui;
-#X obj -575 467 fft-scale-phase-gui;
+#X obj 436 234 fft-gain-gui;
+#X obj 539 234 fft-scale-phase-gui;
+#X obj 741 49 osc-config 8000;
 #X connect 1 0 20 4;
 #X connect 2 0 1 0;
 #X connect 3 0 4 0;
