@@ -23,6 +23,7 @@
 #X obj 217 52 inlet;
 #X text 72 39 0 to disable OSC \; 1 to enable sending \; 2 to enable receiving \; Sending and receiving are mutally exclusive \;, f 40;
 #X obj 363 728 outlet;
+#X text 72 13 Required args for patch: \$1 is <hostname> \, \$2 is UDP port number;
 #X connect 0 0 9 0;
 #X connect 0 1 1 0;
 #X connect 1 0 9 0;
