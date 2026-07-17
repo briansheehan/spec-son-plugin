@@ -61,9 +61,9 @@
 #X obj 793 286 r mag-upper-gui-s;
 #X obj 658 737 outlet;
 #X obj 780 737 outlet;
-#X text 747 702 Upper Magnitude;
-#X text 625 703 Lower Magnitude;
 #X text 367 414 Current sample (i.e. frequency bin) greater than lower threshold parameter and less than upper threshold parameter, f 35;
+#X text 593 710 Lower magnitude scaled, f 15;
+#X text 720 710 Upper Magnitude scaled, f 16;
 #X connect 8 0 14 0 32.................YB...L9+++el....i++++ic....;
 #X connect 8 0 12 0;
 #X connect 10 0 17 0;
