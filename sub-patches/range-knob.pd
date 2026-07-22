@@ -11,8 +11,8 @@
 #X floatatom 594 335 5 0 0 0 - - - 12;
 #X text 559 333 Exp:;
 #X obj 399 363 unpack s f;
-#X obj 497 236 knob 50 0 1 4 0 empty empty #E4E4E4 #B7B7B7 #4D4D4D 1 0 0 0 1 270 0 0 0 empty empty 0 0 0 0 0 0 0 0 0 0;
-#X obj 581 236 knob 50 0 1 4 0 empty empty #E4E4E4 #B7B7B7 #4d4d4d 1 0 0 0 1 270 0 0 0 empty empty 0 0 0 0 0 0 0 0 0 0;
+#X obj 497 236 knob 50 0 1 4 0 empty empty #E4E4E4 #B7B7B7 #4D4D4D 1 0 0 0 1 270 0 0 0 empty empty 0 0 0 0 0 0 0 0;
+#X obj 581 236 knob 50 0 1 4 0 empty empty #E4E4E4 #B7B7B7 #4d4d4d 1 0 0 0 1 270 0 0 0 empty empty 0 0 0 0 0 0 0 0;
 #X obj 503 430 t f f f;
 #X obj 587 430 t f f;
 #X obj 809 380 -;
@@ -23,7 +23,7 @@
 #X obj 809 251 +;
 #X floatatom 809 282 5 0 0 0 - - - 12;
 #X floatatom 809 182 5 0 0 0 - - - 12;
-#X floatatom 587 304 5 0 0 0 - - - 12;
+#X floatatom 581 294 7 0 0 0 - - - 12;
 #X text 809 115 Logic to link knobs at a given range, f 14;
 #X msg 499 108 0;
 #X obj 540 71 t b b b;
@@ -57,7 +57,7 @@
 #X obj 661 71 expr $f1 !=0;
 #X obj 648 304 s \$0-link;
 #X obj 594 371 s \$0-exp;
-#X floatatom 502 304 5 0 0 0 - - - 12;
+#X floatatom 497 294 7 0 0 0 - - - 12;
 #X connect 2 0 7 0;
 #X connect 7 0 12 0;
 #X connect 7 0 13 0;

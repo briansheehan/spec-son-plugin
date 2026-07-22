@@ -1,4 +1,4 @@
-#N canvas 827 239 579 333 12;
+#N canvas 827 239 884 544 12;
 #X floatatom 110 110 8 0 0 0 - - - 16;
 #X msg 22 79 2;
 #X obj 51 79 pow;
@@ -12,10 +12,10 @@
 #X obj 259 54 t a a;
 #X obj 439 58 unpack;
 #X obj 439 85 expr ($f2 - $f1) + 1;
-#X text 301 18 (Min \, max) values for knob range;
+#X text 222 -31 (Min \, max) values for knob range, f 15;
 #X floatatom 439 114 5 0 0 0 - - - 12;
 #X obj 541 20 inlet;
-#X text 586 19 Any messages understood by the knob;
+#X text 484 -16 Any messages understood by the knob, f 24;
 #X msg 259 124 steps \$1;
 #X floatatom 20 12 5 0 0 0 - - - 12;
 #X obj 439 184 cnv 15 101 134 empty empty empty 20 12 0 14 #b785a7 #373737 0;
@@ -30,6 +30,8 @@
 #X obj 166 148 t f f f f;
 #X obj 176 68 bng 22 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737;
 #X obj 104 68 bng 22 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737;
+#X obj 298 19 loadbang;
+#X msg 370 19 0 10;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 2 0 0 0;
@@ -61,4 +63,6 @@
 #X connect 28 3 27 0;
 #X connect 29 0 22 0;
 #X connect 30 0 26 0;
+#X connect 31 0 32 0;
+#X connect 32 0 10 0;
 #X coords 0 0 1 1 101 86 2 100 50;
