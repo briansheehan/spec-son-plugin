@@ -23,8 +23,8 @@
 #X obj 525 162 f \$2;
 #X obj 692 36 r \$1-p;
 #X floatatom 692 105 5 0 0 0 - - - 0;
-#X obj 122 419 print \$1-gui-s;
-#X obj 129 383 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 27 319 print \$1-gui-s;
+#X obj 29 283 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X text 752 35 From [else/presets], f 17;
 #X text 230 210 To [else/presets];
 #X text 444 131 Initialise gui with default, f 11;
@@ -35,7 +35,7 @@
 #X obj 1035 69 route bang, f 16;
 #X obj 1127 109 t b a;
 #X text 1161 16 Generate list of receive names for [else/presets]. Chain is started by sending loadbang to this inlet of first [osc-param] abstraction in parent patch, f 25;
-#X obj 765 310 print r \$1-p;
+#X obj 448 283 print r \$1-p;
 #X obj 692 74 change;
 #X connect 7 0 12 0;
 #X connect 8 0 9 1;
@@ -44,14 +44,12 @@
 #X connect 11 0 16 0;
 #X connect 11 1 14 0;
 #X connect 12 0 9 0;
-#X connect 12 0 24 0;
 #X connect 12 0 19 0;
 #X connect 13 0 11 0;
 #X connect 20 0 21 0;
 #X connect 21 0 16 0;
 #X connect 22 0 37 0;
 #X connect 23 0 16 0;
-#X connect 23 0 36 0;
 #X connect 25 0 24 0;
 #X connect 29 0 32 0;
 #X connect 30 0 33 0;
