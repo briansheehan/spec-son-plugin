@@ -19,9 +19,9 @@
 #X floatatom 413 353 6 0 0 0 - - - 12;
 #X floatatom 580 353 5 0 0 0 - - - 12;
 #X obj 235 120 loadbang;
-#X text 427 229 Sampling ratio, f 13;
-#X text 194 229 Block size;
-#X text 313 229 Overlap ratio;
+#X text 433 229 Sampling ratio, f 13;
+#X text 211 229 Block size;
+#X text 318 229 Overlap ratio;
 #X obj 1224 242 /;
 #X obj 1242 213 samplerate~;
 #X obj 1224 181 t f b;

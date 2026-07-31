@@ -17,9 +17,9 @@
 #X obj 587 430 t f f;
 #X obj 809 380 -;
 #X obj 809 347 t b f;
-#X floatatom 809 406 5 0 0 0 - - - 12;
+#X floatatom 809 406 15 0 0 0 - - - 12;
 #X obj 809 214 spigot;
-#X obj 552 249 tgl 25 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737 0 1;
+#X obj 661 149 tgl 25 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737 0 1;
 #X obj 809 251 +;
 #X floatatom 809 282 5 0 0 0 - - - 12;
 #X floatatom 809 182 5 0 0 0 - - - 12;
@@ -58,6 +58,7 @@
 #X obj 648 304 s \$0-link;
 #X obj 594 371 s \$0-exp;
 #X floatatom 497 294 7 0 0 0 - - - 12;
+#X text 630 93 Link function interacts badily with presents, f 17;
 #X connect 2 0 7 0;
 #X connect 7 0 12 0;
 #X connect 7 0 13 0;
