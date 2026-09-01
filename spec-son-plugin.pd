@@ -26,7 +26,7 @@
 #X msg 864 206 gain1 \$1;
 #X obj -277 -31 r \$0-input-mix;
 #X obj 864 232 s \$0-input-mix;
-#X obj 651 256 tgl 25 1 empty empty empty 0 -10 0 10 #e4e4e4 #4d4d4d #373737 1 1;
+#X obj 651 256 tgl 25 1 empty empty empty 0 -10 0 10 #e4e4e4 #4d4d4d #373737 0 1;
 #X obj 864 282 s \$0-input-mix;
 #X msg 864 256 gain2 \$1;
 #X text 676 258 Play Test Audio;
@@ -87,8 +87,8 @@
 #X obj 836 827 osc-param sampling-ratio 0;
 #X obj 868 856 osc-param win 1, f 19;
 #X obj 893 885 osc-param norm 1;
-#X text 1477 1095 Saving of initial params as defautl currently not working;
 #X obj 124 139 osc-param gain-amt 0.001;
+#X text 1477 1095 Saving of initial params as default currently not working;
 #X connect 0 0 35 1;
 #X connect 1 0 0 0;
 #X connect 2 0 27 0;
@@ -119,8 +119,8 @@
 #X connect 34 0 32 0;
 #X connect 34 1 30 0;
 #X connect 35 0 15 0;
-#X connect 35 1 56 0;
-#X connect 35 2 56 1;
+#X connect 35 1 55 0;
+#X connect 35 2 55 1;
 #X connect 36 0 15 0;
 #X connect 36 1 37 0;
 #X connect 36 2 37 1;
@@ -178,9 +178,9 @@
 #X connect 54 0 15 0;
 #X connect 54 1 17 0;
 #X connect 54 2 8 0;
-#X connect 56 0 15 0;
-#X connect 56 1 36 0;
-#X connect 56 2 36 1;
+#X connect 55 0 15 0;
+#X connect 55 1 36 0;
+#X connect 55 2 36 1;
 #X coords 0 0 1 1 153 79 2 1123 1011;
 #X restore 472 202 pd param-config;
 #X obj -7 691 dac~;
