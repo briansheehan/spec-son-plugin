@@ -30,7 +30,7 @@
 #X obj 864 282 s \$0-input-mix;
 #X msg 864 256 gain2 \$1;
 #X text 676 258 Play Test Audio;
-#N canvas 135 40 1558 1251 param-config 1;
+#N canvas 135 40 1558 1251 param-config 0;
 #X obj 268 70 bng 25 250 50 0 empty empty empty 0 -10 0 10 #e4e4e4 #4d4d4d #373737;
 #X obj 268 41 loadbang;
 #X obj 1150 1042 hradio 15 1 0 8 empty empty empty 0 -8 0 10 #fcfcfc #404040 #000000 0;
