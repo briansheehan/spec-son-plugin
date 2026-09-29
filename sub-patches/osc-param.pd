@@ -22,7 +22,7 @@
 #X obj 525 162 f \$2;
 #X obj 692 36 r \$1-p;
 #X floatatom 692 105 5 0 0 0 - - - 0;
-#X obj 4 365 print \$1-gui-s;
+#X obj 40 326 print \$1-gui-s;
 #X text 752 35 From [else/presets], f 17;
 #X text 230 210 To [else/presets];
 #X text 452 161 Initialise gui with default, f 11;
@@ -43,6 +43,7 @@
 #X connect 7 0 12 0;
 #X connect 8 0 9 1;
 #X connect 9 0 15 0;
+#X connect 9 0 23 0;
 #X connect 10 0 35 0;
 #X connect 11 0 16 0;
 #X connect 11 1 14 0;

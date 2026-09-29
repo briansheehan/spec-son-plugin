@@ -73,6 +73,9 @@
 #X obj 664 334 s norm-gui-s;
 #X obj 533 679 r win-gui-s;
 #X obj 616 679 r norm-gui-s;
+#X obj 897 750 outlet;
+#X text 875 656 Output the block interval in secs to allow block switching to be handled without glitches, f 31;
+#X obj 897 716 r \$0-size-in-s;
 #X connect 0 0 5 0;
 #X connect 0 1 5 1;
 #X connect 1 0 2 1;
@@ -132,4 +135,5 @@
 #X connect 70 0 48 0;
 #X connect 72 0 53 0;
 #X connect 73 0 54 0;
+#X connect 76 0 74 0;
 #X coords 0 0 1 1 477 151 2 175 227;
