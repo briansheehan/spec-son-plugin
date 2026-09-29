@@ -53,7 +53,7 @@
 #X text 955 919 List of parameter receive names for [else/presets], f 22;
 #X msg 858 1073 save 0;
 #X obj 1258 1207 presets -n 9, f 17;
-#A saved norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 10 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 0 || mag-enable-p 1 || phase-amt-p 1 || phase-enable-p 1 || gain-amt-p 0.001 || gain-enable-p 1 || \; norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 12 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 0.185189 || mag-lower-p 0.00515868 || mag-enable-p 1 || phase-amt-p 0 || phase-enable-p 1 || gain-amt-p 0.00745371 || gain-enable-p 1 || \; norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 13 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0.037481 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 0 || mag-enable-p 1 || phase-amt-p 0 || phase-enable-p 1 || gain-amt-p 0.0996353 || gain-enable-p 1 || \; norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 14 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0.00650539 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 0.00270234 || mag-enable-p 1 || phase-amt-p 0 || phase-enable-p 1 || gain-amt-p 0.0424194 || gain-enable-p 1 || \; -empty- \; -empty- \; -empty- \; -empty- \; -empty- \;;
+#A saved norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 10 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 0 || mag-enable-p 1 || phase-amt-p 1 || phase-enable-p 1 || gain-amt-p 0.001 || gain-enable-p 1 || \; norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 2 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 1 || mag-enable-p 1 || phase-amt-p 0 || phase-enable-p 1 || gain-amt-p 0.001 || gain-enable-p 1 || \; norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 13 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0.037481 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 0 || mag-enable-p 1 || phase-amt-p 0 || phase-enable-p 1 || gain-amt-p 0.0996353 || gain-enable-p 1 || \; norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 14 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0.00650539 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 0.00270234 || mag-enable-p 1 || phase-amt-p 0 || phase-enable-p 1 || gain-amt-p 0.0424194 || gain-enable-p 1 || \; -empty- \; -empty- \; -empty- \; -empty- \; -empty- \;;
 #X obj 1139 778 + 1;
 #X obj 1317 803 bng 17 250 50 0 empty empty empty 17 7 0 10 #dcdcdc #000000 #000000;
 #X text 1269 802 default;
@@ -231,8 +231,8 @@
 #X connect 8 0 28 1;
 #X connect 9 0 11 0;
 #X connect 11 0 8 0;
-#X connect 12 0 8 0;
 #X connect 12 0 14 0;
+#X connect 12 0 8 0;
 #X connect 14 0 8 1;
 #X connect 14 1 8 2;
 #X connect 17 0 12 0;
