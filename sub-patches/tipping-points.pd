@@ -137,7 +137,6 @@
 #X floatatom 710 1071 5 0 0 0 - - - 12;
 #X obj 633 894 t b b;
 #X msg 664 934 2 18;
-#X msg 633 934 16;
 #X obj 1002 1262 s mag-lower-gui-r;
 #X obj 1311 1262 s phase-amt-gui-r;
 #X obj 633 1195 log 2;
@@ -146,6 +145,7 @@
 #X obj 81 260 s phase-enable-gui-r;
 #X msg 64 224 1;
 #X obj 62 287 s mag-enable-gui-r;
+#X msg 633 934 14;
 #X connect 1 0 2 0;
 #X connect 2 0 43 0;
 #X connect 3 0 4 0;
@@ -203,7 +203,7 @@
 #X connect 43 0 58 0;
 #X connect 44 0 45 0;
 #X connect 45 0 54 0;
-#X connect 46 0 99 0;
+#X connect 46 0 98 0;
 #X connect 47 0 59 0;
 #X connect 48 0 47 0;
 #X connect 48 1 47 1;
@@ -212,7 +212,7 @@
 #X connect 50 0 85 0;
 #X connect 50 0 86 0;
 #X connect 50 0 63 0;
-#X connect 50 0 105 0;
+#X connect 50 0 104 0;
 #X connect 51 0 19 0;
 #X connect 52 0 28 0;
 #X connect 53 0 7 0;
@@ -221,7 +221,7 @@
 #X connect 55 1 45 1;
 #X connect 55 2 54 1;
 #X connect 56 0 54 2;
-#X connect 57 0 100 0;
+#X connect 57 0 99 0;
 #X connect 58 0 47 0;
 #X connect 59 0 61 0;
 #X connect 59 0 60 0;
@@ -248,15 +248,15 @@
 #X connect 85 0 19 0;
 #X connect 86 0 28 0;
 #X connect 87 0 28 0;
-#X connect 93 0 101 0;
+#X connect 93 0 100 0;
 #X connect 93 1 95 0;
 #X connect 94 0 96 0;
 #X connect 95 0 84 0;
-#X connect 96 0 98 0;
+#X connect 96 0 106 0;
 #X connect 96 1 97 0;
 #X connect 97 0 93 1;
-#X connect 98 0 93 0;
+#X connect 100 0 101 0;
 #X connect 101 0 102 0;
-#X connect 102 0 103 0;
-#X connect 105 0 106 0;
-#X connect 105 0 104 0;
+#X connect 104 0 105 0;
+#X connect 104 0 103 0;
+#X connect 106 0 93 0;

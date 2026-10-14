@@ -20,12 +20,12 @@
 #X obj -216 -115 declare -path ./sub-patches;
 #X text -303 541 Bypass;
 #X obj -338 -31 adc~ 1;
-#X obj 472 463 tgl 25 1 empty empty empty 0 -10 0 10 #e4e4e4 #4d4d4d #373737 0 1;
+#X obj 472 463 tgl 25 1 empty empty empty 0 -10 0 10 #e4e4e4 #4d4d4d #373737 1 1;
 #X text 497 465 Enable Input;
 #X msg 472 563 gain1 \$1;
 #X obj -277 -31 r \$0-input-mix;
 #X obj 472 589 s \$0-input-mix;
-#X obj 701 463 tgl 25 1 empty empty empty 0 -10 0 10 #e4e4e4 #4d4d4d #373737 1 1;
+#X obj 701 463 tgl 25 1 empty empty empty 0 -10 0 10 #e4e4e4 #4d4d4d #373737 0 1;
 #X obj 701 589 s \$0-input-mix;
 #X msg 701 563 gain2 \$1;
 #X text 726 465 Play Test Audio;
@@ -53,7 +53,7 @@
 #X text 955 919 List of parameter receive names for [else/presets], f 22;
 #X msg 858 1073 save 0;
 #X obj 1258 1207 presets -n 9, f 17;
-#A saved norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 10 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 0 || mag-enable-p 1 || phase-amt-p 1 || phase-enable-p 1 || gain-amt-p 0.001 || gain-enable-p 1 || \; norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 2 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 1 || mag-enable-p 1 || phase-amt-p 0 || phase-enable-p 1 || gain-amt-p 0.001 || gain-enable-p 1 || \; norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 13 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0.037481 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 0 || mag-enable-p 1 || phase-amt-p 0 || phase-enable-p 1 || gain-amt-p 0.0996353 || gain-enable-p 1 || \; norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 14 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0.00650539 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 0.00270234 || mag-enable-p 1 || phase-amt-p 0 || phase-enable-p 1 || gain-amt-p 0.0424194 || gain-enable-p 1 || \; -empty- \; -empty- \; -empty- \; -empty- \; -empty- \;;
+#A saved norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 10 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 0 || mag-enable-p 1 || phase-amt-p 1 || phase-enable-p 1 || gain-amt-p 0.001 || gain-enable-p 1 || \; norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 17 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 0.151614 || freq-lower-p 0 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 0.00456976 || mag-enable-p 1 || phase-amt-p 0 || phase-enable-p 1 || gain-amt-p 0.001 || gain-enable-p 1 || \; norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 13 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0.037481 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 0 || mag-enable-p 1 || phase-amt-p 0 || phase-enable-p 1 || gain-amt-p 0.0996353 || gain-enable-p 1 || \; norm-p 1 || win-p 1 || sampling-ratio-p 0 || overlap-ratio-p 2 || block-size-p 14 || freq-exp-p 2 || mag-exp-p 2 || freq-upper-p 1 || freq-lower-p 0.00650539 || freq-flip-p 0 || freq-link-p 0 || freq-enable-p 1 || mag-flip-p 0 || mag-link-p 0 || mag-upper-p 1 || mag-lower-p 0.00270234 || mag-enable-p 1 || phase-amt-p 0 || phase-enable-p 1 || gain-amt-p 0.0424194 || gain-enable-p 1 || \; -empty- \; -empty- \; -empty- \; -empty- \; -empty- \;;
 #X obj 1139 778 + 1;
 #X obj 1317 803 bng 17 250 50 0 empty empty empty 17 7 0 10 #dcdcdc #000000 #000000;
 #X text 1269 802 default;
@@ -221,9 +221,6 @@
 #X msg -21 -84 pluginmode;
 #X obj -21 -51 s pd;
 #X obj 674 190 s \$0-block-interval-in-s;
-#X obj 58 677 r \$0-block-params;
-#X obj 200 677 r \$0-block-interval-in-s;
-#X obj -7 733 smooth-block-switch2;
 #X connect 1 0 27 0;
 #X connect 2 0 14 4;
 #X connect 3 0 4 0;
@@ -232,7 +229,8 @@
 #X connect 3 3 32 0;
 #X connect 5 0 2 0;
 #X connect 6 0 14 1;
-#X connect 8 0 35 0;
+#X connect 8 0 28 0;
+#X connect 8 0 28 1;
 #X connect 9 0 11 0;
 #X connect 11 0 8 0;
 #X connect 12 0 8 0;
@@ -248,8 +246,4 @@
 #X connect 27 0 1 0;
 #X connect 29 0 30 0;
 #X connect 30 0 31 0;
-#X connect 33 0 35 1;
-#X connect 34 0 35 2;
-#X connect 35 0 28 0;
-#X connect 35 0 28 1;
 #X coords 0 0 1 1 482 158 0;
